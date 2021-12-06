@@ -12,10 +12,10 @@
 
     --ff-prim: 'Montserrat', sans-serif;
 
-    --fs-h1: 56px;
-    --fs-h2: 46px;
-    --fs-h3: 40px;
-    --fs-p: 18px;
+    --fs-h1: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 2rem;
+    --fs-p: 1rem;
 
     --fw-h1: bold;
     --fw-h2: bold;
@@ -88,7 +88,7 @@ nav ul {
 nav li {
     margin-left: 1em;
     color: var(--clr-dark);
-    font-size: var(--fs-p);
+    font-size: var(--fs-h3);
     font-weight: var(--fw-h3);
     font-family: var(--ff-prim);
     cursor: pointer;
@@ -96,7 +96,7 @@ nav li {
 
 nav a {
     color: var(--clr-dark);
-    font-size: var(--fs-p);
+    font-size: var(--fs-3);
     font-weight: var(--fw-h3);
     font-family: var(--ff-prim);
 }
@@ -113,12 +113,17 @@ nav a {
     z-index: 0;
 }
 
+.program-slider img {
+    margin-left: 10em;
+}
+
 .content-wrapper-program-slider {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 90ch;
     margin: 5em;
+    max-width: 60%;
 }
 
 .slider-img {
@@ -167,6 +172,10 @@ nav a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .program-slider img {
+        margin: 1em;
     }
 }
 
