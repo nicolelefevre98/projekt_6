@@ -84,6 +84,13 @@ nav {
     margin: 2em 2em;
 }
 
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
 .logo-wrap {
     display: flex;
     align-items: center;
@@ -95,6 +102,7 @@ nav {
 
 nav ul {
     display: flex;
+    margin-left: 5em;
 }
 
 nav li {
@@ -166,6 +174,75 @@ nav ul li ul:hover {
 nav ul li ul li {
     clear: both;
     width: 100%;
+}
+
+.mobile-menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    width: 100vw;
+}
+
+.burger-menu {
+    display: flex;
+    cursor: pointer;
+}
+
+.burger-line {
+    height: 8px;
+    width: 34px;
+    background: var(--clr-dark);
+    margin: .35em;
+}
+
+.mobile-menu {
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu li {
+    margin: .6em 0;
+}
+
+.mobile-menu a {
+    color: var(--clr-light);
+}
+
+.fa-times {
+    position: relative;
+    top: 1em;
+    left: 6em;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .nav-wrap {
+        display: none;
+    }
+
+    .mobile-menu-wrap {
+        display: flex;
+    }
 }
 
 
@@ -267,6 +344,11 @@ nav ul li ul li {
     .program-slider img {
         margin: 1em;
     }
+
+
+    .about-ohf-img {
+        display: none;
+    }
 }
 
 /* program slider slutter her */
@@ -276,6 +358,7 @@ nav ul li ul li {
     justify-content: space-between;
     margin: 1em;
     max-width: 100%;
+    overflow: hidden;
 
 }
 
@@ -333,6 +416,12 @@ nav ul li ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .member-sayings-wrap {
+        flex-wrap: wrap;
+    }
 }
 
 .member-sayings-block {
@@ -567,6 +656,21 @@ footer {
     background: var(--clr-light);
 }
 
+@media only screen and (max-width: 900px) {
+    .program-content-img-wrap {
+        display: none;
+    }
+
+    .card-program {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-wrap-program {
+        margin: 1em;
+    }
+}
+
 
 /****************************
 *Bestyrelse.html starter her*
@@ -669,10 +773,18 @@ footer {
     display: flex;
 }
 
+@media only screen and (max-width: 900px) {
+    .contact-form-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .container-inside-form {
     display: flex;
     flex-direction: column;
 }
+
 
 input {
     padding: 1.5em 4em;

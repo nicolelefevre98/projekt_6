@@ -15,27 +15,61 @@
 
 <body>
     <div class="topline"></div>
+
     <nav role="navigation">
-        <div class="logo-wrap">
-            <img class="logo" src="./img/forside/ohf_logo.svg" alt="">
-            <h3><strong>Odense</strong>Højskoleforening</h3>
+        <div class="nav-wrap">
+            <div class="logo-wrap">
+                <img class="logo" src="./img/forside/ohf_logo.svg" alt="">
+                <h3><strong>Odense</strong>Højskoleforening</h3>
+            </div>
+
+
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="program.html">Program</a>
+
+                </li>
+                <li><a href="#">foreningen</a>
+                    <ul class="dropdown">
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="bestyrelsen.html">Bestyrelse</a></li>
+                        <li><a href="#">Vores historie</a></li>
+                        <li><a href="bliv-medlem.html">Bliv medlem</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu-wrap">
+            <div class="logo-wrap">
+                <img class="logo" src="./img/forside/ohf_logo.svg" alt="">
+                <h4><strong>Odense <br></strong>Højskoleforening</h4>
+            </div>
+
+            <div class="burger-menu" id="burgerMenu" onclick="showMenu()">
+                <div class="icon-wrap">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-times fa-5x" onclick="closeMenu()"></i>
+            <ul>
+
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="program.html">Program</a></li>
+
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="bestyrelsen.html">Bestyrelse</a></li>
+                <li><a href="#">Vores historie</a></li>
+                <li><a href="bliv-medlem.html">Bliv medlem</a></li>
+
+            </ul>
         </div>
 
 
-        <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="program.html">Program</a>
-
-            </li>
-            <li><a href="#">foreningen</a>
-                <ul class="dropdown">
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="bestyrelsen.html">Bestyrelse</a></li>
-                    <li><a href="#">Vores historie</a></li>
-                    <li><a href="#">Vedtægter</a></li>
-                </ul>
-            </li>
-        </ul>
     </nav>
 
     <section>
