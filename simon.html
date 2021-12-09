@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program O-HF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>
+    <script src="simon.js" defer></script>
+</head>
+
+<body>
+    <div class="topline"></div>
+
+    <nav role="navigation">
+        <div class="nav-wrap">
+            <div class="logo-wrap">
+                <img class="logo" src="./img/forside/ohf_logo.svg" alt="">
+                <h3><strong>Odense</strong>Højskoleforening</h3>
+            </div>
+
+
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="program.html">Program</a>
+
+                </li>
+                <li><a href="#">foreningen</a>
+                    <ul class="dropdown">
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="bestyrelsen.html">Bestyrelse</a></li>
+                        <li><a href="#">Vores historie</a></li>
+                        <li><a href="bliv-medlem.html">Bliv medlem</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu-wrap">
+            <div class="logo-wrap">
+                <img class="logo" src="./img/forside/ohf_logo.svg" alt="">
+                <h4><strong>Odense <br></strong>Højskoleforening</h4>
+            </div>
+
+            <div class="burger-menu" id="burgerMenu" onclick="showMenu()">
+                <div class="icon-wrap">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-times fa-5x" onclick="closeMenu()"></i>
+            <ul>
+
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="program.html">Program</a></li>
+
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="bestyrelsen.html">Bestyrelse</a></li>
+                <li><a href="#">Vores historie</a></li>
+                <li><a href="bliv-medlem.html">Bliv medlem</a></li>
+
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <section>
+        <div class="program-top-info">
+            <div class="content-program-wrap">
+                <img class="logo-underlay-slider" src="./img/forside/ohf_logo-darkgrey.svg" id="top-program-overlay"
+                    alt="">
+                <h3>Om foreningens arrangementer</h3>
+                <p>Lige så vigtigt som det gode indhold i foredragene,
+                    er det vigtig at du føler dig velkommen. Den måde vi
+                    ønsker at sikre det på, er ved de følgende tre ingredienser
+                    ved alle vores arrangementer.
+
+                </p>
+            </div>
+            <div class="program-content-img-wrap">
+
+                <div class="single-img-block">
+                    <img src="./img/program/top1.png" alt="">
+                    <p>Trygt fællesskab hvor der er tid til at hygge i
+                        pauserne.
+                    </p>
+                </div>
+
+                <div class="single-img-block">
+                    <img src="./img/program/top2.png" alt="">
+                    <p>Samtale om aftenens emne, hvor alle foredragsholder vil have tre spørgsmål til aftenens emne som
+                        du har mulighed for at tale med din sidemand om.
+
+                    </p>
+                </div>
+
+                <div class="single-img-block">
+                    <img src="./img/program/top.3.png" alt="">
+                    <p>Fællessang fra højskolesangbogen, hvor der vil
+                        blive valgt både kendte sange, men også hvor
+                        vi vil lære en ny hver gang.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="program">
+
+        <h2>Kommende foredrag og arrangementer</h2> <br>
+        <div class="card-program">
+            <img class="logo-underlay-slider" src="./img/forside/ohf_logo-white.svg" id="overlay-card" alt="">
+            <img src="./img/program/feminisme.png" alt="">
+            <div class="content-wrap-program">
+                <h2>Mænd og feminisme
+                </h2>
+                <h3>Mikkel Thorup</h3>
+                <p>I dette oplæg vil jeg prøve at diskutere, hvad der
+                    sker på køns- og seksualitetsområdet i disse år, særligt hvad der
+                    sker for mænd, hvordan forskellige grupper af mænd oplever og
+                    reagerer på udviklingen, når det nu ikke længere kun er kvindekønnet, der er til diskussion.</p>
+                <div id="info">
+                    <p>Mikkel Thorup har flere bøger bag sig,
+                        bl.a. ”Fjendskab” (i serien Tænkepause).
+                        I 2021 udgav han ”Kønnets idehistorie”,
+                        en antologi. Mens han samlede antologien, skrev han bogen ”Antifeminisme”,
+                        fordi han blev overrasket over, hvor meget kvindehad, der er i offentliggjorte artikler og bøger.
+                        ”Vores offentlige debat er i disse år fyldt med #metoo, kønskvoter, transrettigheder og unge feminister, der kræver deres ret.
+                        Men også af kritik, modreaktioner, påberåbelser af naturlige forskelle mellem kønnene og følelser af, at udviklingen går for langt
+                        og for hurtigt. I dette oplæg vil jeg prøve at diskutere, hvad der
+                        sker på køns- og seksualitetsområdet i disse år, særligt hvad der
+                        sker for mænd, hvordan forskellige grupper af mænd oplever og
+                        reagerer på udviklingen, når det nu ikke længere kun er kvindekønnet, der er </p>
+                </div>
+        
+                <h3>Odense Valgmenighedskirke</h3>
+                <h3>11/01 2022 19:00</h3>
+                <button onclick="visMere()" class="read-more-btn">
+                    Læs mere
+                </button>
+                
+            </div>
+        </div>
+    </section>

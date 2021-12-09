@@ -506,6 +506,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    position: relative;
 }
 
 .footer-wrap {
@@ -654,6 +655,7 @@ footer {
     color: var(--clr-dark);
     background: var(--clr-light);
 }
+
 
 @media only screen and (max-width: 900px) {
     .program-content-img-wrap {
