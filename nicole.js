@@ -21,6 +21,7 @@ var errorMessages = [
     "Du er nu tilmeldt"]
 var colors = ["red","green"]
 
+//For at koden ikke bliver læst før der er trykket på knappen tilmeld
 function check(){
 
 //if er et statement, hvis indholdet i () er sandt eller ej
@@ -58,13 +59,14 @@ function check(){
         //alert("Du mangler at acceptere vores betingelser")
     }
     else if(firstName.value.length != 0 && mail.value.length != 0 && phone.value.length != 0 && adress.value.length != 0 && zip.value.length == true) {
-        //alert("Det virker")
+        //alert("Du er nu tilmeldt")
         error.innerHTML = errorMessages[5]
         error.style.color = colors[1]
         firstName.style.border = borderColors[1];
-        surname.style.border = borderColors[1];
         mail.style.border = borderColors[1];
-        password.style.border = borderColors[1];
+        phone.style.border = borderColors[1];
+        adress.style.border = borderColors[1];
+        zip.style.border = borderColors[1];
     }
 
     //console på inspect 
