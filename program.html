@@ -130,22 +130,24 @@
                     sker på køns- og seksualitetsområdet i disse år, særligt hvad der
                     sker for mænd, hvordan forskellige grupper af mænd oplever og
                     reagerer på udviklingen, når det nu ikke længere kun er kvindekønnet, der er til diskussion.</p>
-                    <br>
-                        <p id="info">Mikkel Thorup har flere bøger bag sig,
-                            bl.a. ”Fjendskab” (i serien Tænkepause).
-                            I 2021 udgav han ”Kønnets idehistorie”,
-                            en antologi. Mens han samlede antologien, skrev han bogen ”Antifeminisme”,
-                            fordi han blev overrasket over, hvor meget kvindehad, der er i offentliggjorte artikler og bøger.
-                            ”Vores offentlige debat er i disse år fyldt med #metoo, kønskvoter, transrettigheder og unge feminister, der kræver deres ret.
-                            Men også af kritik, modreaktioner, påberåbelser af naturlige forskelle mellem kønnene og følelser af, at udviklingen går for langt
-                            og for hurtigt.</p>
+                <br>
+                <p id="info">Mikkel Thorup har flere bøger bag sig,
+                    bl.a. ”Fjendskab” (i serien Tænkepause).
+                    I 2021 udgav han ”Kønnets idehistorie”,
+                    en antologi. Mens han samlede antologien, skrev han bogen ”Antifeminisme”,
+                    fordi han blev overrasket over, hvor meget kvindehad, der er i offentliggjorte artikler og bøger.
+                    ”Vores offentlige debat er i disse år fyldt med #metoo, kønskvoter, transrettigheder og unge
+                    feminister, der kræver deres ret.
+                    Men også af kritik, modreaktioner, påberåbelser af naturlige forskelle mellem kønnene og følelser
+                    af, at udviklingen går for langt
+                    og for hurtigt.</p>
 
                 <h3>Odense Valgmenighedskirke</h3>
                 <h3>11/01 2022 19:00</h3>
                 <button onclick="visMere()" class="read-more-btn">
                     Læs mere
                 </button>
-                
+
             </div>
         </div>
 
@@ -252,45 +254,47 @@
                 </ul>
             </div>
         </div>
+        <div class="simon-js-wrap">
+            <input type="text" id="tilføj" placeholder="Navn">
 
-        <input type="text" id="tilføj" placeholder="Navn">
+            <br>
 
-           <br>
+            <button type="button" name="button" onclick="tjekMedlem()" class="btn-medlem">Er jeg medlem?</button>
+        </div>
+        <div id="medlem">
 
-        <button type="button" name="button" onclick="tjekMedlem()" class="btn-medlem">Er jeg medlem?</button>
+            <div class="medlem_style">
 
-           <div id="medlem">
+                <button type="button" name="button" id="btn_close" onclick="closePopup()">X</button>
 
-               <div class="medlem_style">
+                <p>Du er medlem!</p>
+                <br>
+                <p>Som medlem kan du tilmelde dig vores arrangementer</p>
+                <br>
+                <p>klik på knappen under for at finde dem.</p>
 
-                 <button type="button" name="button" id="btn_close" onclick="closePopup()">X</button>
+                <button type="button" name="button" class="btn-select" onclick="window.location.href='program.html'">Se
+                    program</button>
+            </div>
 
-                 <p>Du er medlem!</p>
-                 <br>
-                 <p>Som medlem kan du tilmelde dig vores arrangementer</p>
-                 <br>
-                 <p>klik på knappen under for at finde dem.</p>
+        </div>
 
-                 <button type="button" name="button" class="btn-select" onclick="window.location.href='program.html'">Se program</button>
-               </div>
+        <div id="ikke_medlem">
 
-           </div>
+            <div class="medlem_style">
 
-           <div id="ikke_medlem">
+                <button type="button" name="button" id="btn_close" onclick="closePopup()">X</button>
 
-             <div class="medlem_style">
+                <p>Du er ikke medlem!</p>
+                <p>Tilmeld dig i dag og gå aldrig glip af vores spændende arrangementer</p>
+                <p>Tryk på knapper og bliv medlem.</p>
+                <br>
+                <button type="button" name="button" class="btn-select"
+                    onclick="window.location.href='bliv-medlem.html'">Tilmeld dig her!</button>
 
-               <button type="button" name="button" id="btn_close" onclick="closePopup()">X</button>
+            </div>
 
-               <p>Du er ikke medlem!</p>
-               <p>Tilmeld dig i dag og gå aldrig glip af vores spændende arrangementer</p>
-               <p>Tryk på knapper og bliv medlem.</p>
-               <br>
-               <button type="button" name="button" class="btn-select" onclick="window.location.href='bliv-medlem.html'">Tilmeld dig her!</button>
-
-             </div>
-
-           </div>
+        </div>
 
         <div class="some-footer">
             <p>Følg med</p>
