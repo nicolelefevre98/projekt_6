@@ -30,10 +30,10 @@ function confirmMessage() {
 
 
 //stop reload 
-const form = document.getElementById("form-contact");
+// const form = document.getElementById("form-contact");
 
-function handleForm(event) {
-     event.preventDefault(); 
-     console.log('tests')} 
+// function handleForm(event) {
+//      event.preventDefault(); 
+//      console.log('tests')} 
 
-form.addEventListener('submit', handleForm);
+// form.addEventListener('submit', handleForm);
