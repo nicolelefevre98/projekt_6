@@ -837,3 +837,30 @@ input {
 #submit-form h3 {
     color: var(--clr-light);
 }
+
+
+
+
+.member-modal {
+    position: absolute;
+    background: var(--clr-light);
+    padding: 10em;
+    color: var(--clr-dark);
+    display: none;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.confirm-written-msg {
+    margin: 1em;
+    font-family: var(--ff-prim);
+    font-size: var(--fs-h4);
+}
+
+#closeBtn {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

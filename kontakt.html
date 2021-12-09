@@ -78,7 +78,7 @@
         <h3>Kontakt os</h3>
     </div>
 
-    <div class="card-contactform">
+    <section class="card-contactform">
         <div class="contact-wrap-top">
 
             <div class="contact-form-writing">
@@ -91,6 +91,16 @@
             <img src="./img/bestyrelsen/jens-contact.png" alt="">
         </div>
 
+        <div class="member-modal" id="closeme">
+
+            <ul id="menu">
+            </ul>
+
+            <button onclick="closeModal()" class="information-btn" id="closeBtn">Bekræft</button>
+
+        </div>
+
+
         <form class="contact-form-container" action="" autocomplete="true" id="form-contact"
             onsubmit="confirmMessage()">
             <div class="form-contact-wrap">
@@ -102,14 +112,15 @@
 
 
             <div class="container-inside-form">
-                <input class="msg-input" type="text" placeholder="Skriv din besked her." required>
+                <input class="msg-input" type="text" placeholder="Skriv din besked her." id="msg-input" required>
 
 
                 <button class="information-btn" type="submit">Send</button>
             </div>
         </form>
 
-    </div>
+        </div>
+    </section>
 
     <footer>
 
