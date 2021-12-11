@@ -45,6 +45,7 @@ h3 {
     font-size: var(--fs-h3);
     font-weight: var(--fw-h3);
     font-family: var(--ff-prim);
+    margin-top: 1em;
 }
 
 h4 {
@@ -61,6 +62,17 @@ p {
     font-size: var(--fs-p);
     font-family: var(--ff-prim);
 }
+
+.test {
+    color: var(--clr-dark);
+    font-size: var(--fs-p);
+    font-family: var(--ff-prim);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
 
 * {
     padding: 0;
@@ -101,7 +113,8 @@ nav {
 
 nav ul {
     display: flex;
-    margin-left: 5em;
+    margin-top: 2em;
+    margin-left: 12em;
 }
 
 nav li {
@@ -127,7 +140,7 @@ nav a {
 
 nav li {
     list-style: none;
-    margin: 0;
+    margin: 10px;
     padding-left: 0;
     z-index: 2;
 }
