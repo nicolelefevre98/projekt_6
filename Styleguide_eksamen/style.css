@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+    --clr-dark: #272727;
+    --clr-light: #F7f7f2;
+    --clr-accnt-yellow: #F5E460;
+    --clr-accnt-red: #D82C3A;
+
+    --ff-prim: 'Montserrat', sans-serif;
+
+    --fs-h1: 56px;
+    --fs-h2: 46px;
+    --fs-h3: 40px;
+    --fs-p: 24px;
+
+    --fw-h1: bold;
+    --fw-h2: bold;
+    --fw-h3: 500;
+
+    --lh-p: 1.5;
+}
+
+h1 {
+    color: var(--clr-dark);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-h1);
+    font-family: var(--ff-prim);
+}
+h2 {
+    color: var(--clr-dark);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-h2);
+    font-family: var(--ff-prim);
+}
+h3 {
+    color: var(--clr-dark);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-h3);
+    font-family: var(--ff-prim);
+}
+p {
+    color: var(--clr-dark);
+    font-size: var(--fs-p);
+    font-family: var(--ff-prim);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+nav {
+    background-color: var(--clr-accnt-yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a{
+    color: var(--clr-dark);
+    font-size: var(--fs-p);
+    font-family: var(--ff-prim);
+}
+
+.color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1em;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.color h2 {
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.content-left-side{
+    max-width: 60ch;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3em;
+}
+
+.all-color-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.single-color-block{
+    display: flex;
+    width: 20em;
+    margin: 2em;
+}
+
+.color-square {
+    border-radius: 8px;
+}
+
+.color-wrapper {
+    display: flex;
+
+}
+
+.color-square {
+    height: 10em;
+    width: 5em;
+}
+
+
+
+
+#yellow {
+    background: var(--clr-accnt-yellow);
+}
+
+#red {
+    background: var(--clr-accnt-red);
+}
+
+#black {
+    background: var(--clr-dark);
+}
+
+#white {
+    background: var(--clr-light);
+}
+
+
+/* typografi */
+
+
+.typography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+}
+
+.intro-typography {
+    max-width: 60ch;
+    margin: 4em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.typography-example{
+    margin: 4em;
+}
+
+.typography-example p{
+    max-width: 40ch;
+
+}
