@@ -175,6 +175,10 @@ nav ul li ul li {
     width: 100%;
 }
 
+.dropdown {
+    margin: 0;
+}
+
 .mobile-menu-wrap {
     display: flex;
     justify-content: space-between;
