@@ -12,6 +12,7 @@ function closeMenu() {
     document.getElementById('mobileMenu').style.display = "none";
 };
 
+
 //Variabler defineres her, ud fra DOM HTML Id
 var firstName = document.getElementById("name");
 var mail = document.getElementById("mail");
