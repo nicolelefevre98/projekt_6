@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
 
     --clr-dark: #272727;
     --clr-light: #F7f7f2;
@@ -27,25 +27,28 @@ h1 {
     font-weight: var(--fw-h1);
     font-family: var(--ff-prim);
 }
+
 h2 {
     color: var(--clr-dark);
     font-size: var(--fs-h2);
     font-weight: var(--fw-h2);
     font-family: var(--ff-prim);
 }
+
 h3 {
     color: var(--clr-dark);
     font-size: var(--fs-h3);
     font-weight: var(--fw-h3);
     font-family: var(--ff-prim);
 }
+
 p {
     color: var(--clr-dark);
     font-size: var(--fs-p);
     font-family: var(--ff-prim);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -65,13 +68,13 @@ nav {
     width: 100%;
 }
 
-nav a{
+nav a {
     color: var(--clr-dark);
     font-size: var(--fs-p);
     font-family: var(--ff-prim);
 }
 
-.color{
+.color {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,7 +90,7 @@ nav a{
     margin-top: 1em;
 }
 
-.content-left-side{
+.content-left-side {
     max-width: 60ch;
     margin: 1em;
     display: flex;
@@ -101,7 +104,8 @@ nav a{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.single-color-block{
+
+.single-color-block {
     display: flex;
     width: 20em;
     margin: 2em;
@@ -162,11 +166,155 @@ nav a{
     flex-shrink: 1;
 }
 
-.typography-example{
+.typography-example {
     margin: 4em;
 }
 
-.typography-example p{
+.typography-example p {
     max-width: 40ch;
 
+}
+
+.information-btn {
+    background: var(--clr-accnt-yellow);
+    color: var(--clr-dark);
+    max-width: 13em;
+    border: none;
+    border-radius: 4px;
+    margin: 1em;
+    padding: 1em;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.information-btn p {
+    color: var(--clr-dark);
+}
+
+.information-btn:hover {
+    background: var(--clr-dark);
+    color: var(--clr-accnt-yellow);
+    border: var(--clr-accnt-dyellow) solid .1em;
+
+}
+
+.read-more-btn {
+    padding: .5em 3em;
+    margin: 1em;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    border: none;
+    transition: .15s ease-in-out;
+}
+
+.read-more-btn:hover {
+    color: var(--clr-dark);
+    background: var(--clr-light);
+}
+
+.card-contactform {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-accnt-yellow);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    background-image: url(./img/forside/ohf_logo-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.contact-form-writing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.contact-wrap-top {
+    display: flex;
+    margin: 4em;
+}
+
+.contact-wrap-top img {
+    max-height: 20em;
+}
+
+.contact-form-writing {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container {
+    display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-form-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container-inside-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    padding: 1.5em 4em;
+    margin: 1em;
+    height: 1em;
+    border-radius: 8px;
+    border: none;
+}
+
+.msg-input {
+    height: 10em;
+    overflow: auto;
+}
+
+.container-sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-signup {
+    background: var(--clr-accnt-yellow);
+    border-radius: 8px;
+    margin: 2em;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+#submit-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit-form h3 {
+    color: var(--clr-light);
+}
+
+xmp {
+    max-height: 7em;
+    overflow: auto;
+    background: var(--clr-light);
 }
