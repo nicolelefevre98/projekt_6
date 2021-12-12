@@ -1,3 +1,4 @@
+//skal vise fra nummer 1
 var slideIndex = 1;
 showSlides(slideIndex);
 
