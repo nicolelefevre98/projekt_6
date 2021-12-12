@@ -1,4 +1,7 @@
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -9,11 +12,12 @@
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: flex;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -35,19 +39,27 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
-  text-align: center;
+  width: 80%;
+  left: 20%;
+
+}
+
+.text h2,
+.text h3,
+.text p {
+  color: #f7f7f2;
+  margin: 1rem;
 }
 
 /* Number text (1/3 etc) */
@@ -71,7 +83,8 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -81,14 +94,42 @@
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  display: none;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container img {
+  width: 25%;
+}
+
+
+.img-container-slider {
+  display: flex;
+  flex-direction: column;
+
 }

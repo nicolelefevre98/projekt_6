@@ -277,6 +277,10 @@ nav ul li ul li {
     color: var(--clr-accnt-dyellow);
 }
 
+.slideshow-container {
+    display: flex;
+}
+
 .program-slider {
     display: flex;
     background: var(--clr-dark);
