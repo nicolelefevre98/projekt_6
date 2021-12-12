@@ -75,6 +75,284 @@
     </section>
 
 
+    <section class="btn">
+        <div class="code-overflow-auto-wrap">
+            <h2>Knapper</h2>
+            <button class="information-btn">Information</button>
+            <xmp class="code-block">
+                HTMl:
+                <button class="information-btn">Information</button>
+
+                CSS:
+                .information-btn {
+                background: var(--clr-accnt-yellow);
+                color: var(--clr-dark);
+                max-width: 13em;
+                border: none;
+                border-radius: 4px;
+                margin: 1em;
+                padding: 1em;
+                cursor: pointer;
+                transition: .15s ease-in-out;
+                }
+
+                .information-btn p {
+                color: var(--clr-dark);
+                }
+
+                .information-btn:hover {
+                background: var(--clr-dark);
+                color: var(--clr-accnt-yellow);
+                border: var(--clr-accnt-dyellow) solid .1em;
+
+                }
+
+            </xmp>
+        </div>
+
+
+
+        <div class="code-overflow-auto-wrap">
+            <button class="read-more-btn">Read more</button>
+            <xmp>
+                HTML:
+                <button class="read-more-btn">Read more</button>
+
+                CSS:
+                .read-more-btn {
+                padding: .5em 3em;
+                margin: 1em;
+                background: var(--clr-dark);
+                color: var(--clr-light);
+                border: none;
+                transition: .15s ease-in-out;
+                }
+
+                .read-more-btn:hover {
+                color: var(--clr-dark);
+                background: var(--clr-light);
+                }
+            </xmp>
+        </div>
+
+    </section>
+
+    <section class="form">
+        <br>
+        <h2>Forms</h2>
+
+        <section class="card-contactform">
+            <div class="contact-wrap-top">
+
+                <div class="contact-form-writing">
+                    <p>Name</p>
+                    <p><i>position</i></p>
+                    <p>mail:
+                    </p>
+                    <p>Phone</p>
+                </div>
+                <h1>Image</h1>
+            </div>
+
+            <div class="member-modal" id="closeme">
+
+                <ul id="menu">
+                </ul>
+
+
+
+            </div>
+
+
+            <form class="contact-form-container" action="" autocomplete="true" id="form-contact"
+                onsubmit="confirmMessage()">
+                <div class="form-contact-wrap">
+
+                    <input type="text" placeholder="Navn" id="fName" required>
+                    <input type="text" placeholder="Email" id="email" required>
+                    <input type="text" placeholder="Telefon nummer" id="phoneNumber" required>
+                </div>
+
+
+                <div class="container-inside-form">
+                    <input class="msg-input" type="text" placeholder="Skriv din besked her." id="msg-input" required>
+
+
+                    <button class="read-more-btn" type="submit">Send</button>
+                </div>
+            </form>
+
+            </div>
+            <xmp>
+                HTML:
+                <form class="contact-form-container" action="" autocomplete="true" id="form-contact"
+                    onsubmit="confirmMessage()">
+                    <div class="form-contact-wrap">
+
+                        <input type="text" placeholder="Navn" id="fName" required>
+                        <input type="text" placeholder="Email" id="email" required>
+                        <input type="text" placeholder="Telefon nummer" id="phoneNumber" required>
+                    </div>
+
+
+                    <div class="container-inside-form">
+                        <input class="msg-input" type="text" placeholder="Skriv din besked her." id="msg-input"
+                            required>
+
+
+                        <button class="read-more-btn" type="submit">Send</button>
+                    </div>
+                </form>
+
+                CSS:
+                .card-contactform {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: var(--clr-accnt-yellow);
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2em;
+                background-image: url(./img/forside/ohf_logo-white.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+                }
+
+                .contact-form-writing {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1em;
+                }
+
+                .contact-wrap-top {
+                display: flex;
+                margin: 4em;
+                }
+
+                .contact-wrap-top img {
+                max-height: 20em;
+                }
+
+                .contact-form-writing {
+                display: flex;
+                flex-direction: column;
+                }
+
+                .form-contact-wrap {
+                display: flex;
+                flex-direction: column;
+                }
+
+                .contact-form-container {
+                display: flex;
+                }
+
+                @media only screen and (max-width: 900px) {
+                .contact-form-container {
+                display: flex;
+                flex-direction: column;
+                }
+                }
+
+                .container-inside-form {
+                display: flex;
+                flex-direction: column;
+                }
+
+
+                input {
+                padding: 1.5em 4em;
+                margin: 1em;
+                height: 1em;
+                border-radius: 8px;
+                border: none;
+                }
+
+                .msg-input {
+                height: 10em;
+                overflow: auto;
+                }
+
+            </xmp>
+
+
+        </section>
+        <br><br><br>
+        <form class="contact-form-container" action="" autocomplete="true" id="form-board">
+            <div class="form-contact-wrap">
+
+                <input type="text" placeholder="Navn" id="fName" required>
+                <input type="text" placeholder="Email" id="email" required>
+                <input type="text" placeholder="Telefon nummer" id="phoneNumber" required>
+            </div>
+
+
+            <div class="container-inside-form">
+                <input class="msg-input" type="text" placeholder="Skriv din besked her." required>
+
+
+                <button class="information-btn" type="submit">Send</button>
+            </div>
+        </form>
+        </div>
+        <xmp>
+            HTML:
+            <form class="contact-form-container" action="" autocomplete="true" id="form-board">
+                <div class="form-contact-wrap">
+
+                    <input type="text" placeholder="Navn" id="fName" required>
+                    <input type="text" placeholder="Email" id="email" required>
+                    <input type="text" placeholder="Telefon nummer" id="phoneNumber" required>
+                </div>
+
+
+                <div class="container-inside-form">
+                    <input class="msg-input" type="text" placeholder="Skriv din besked her." required>
+
+
+                    <button class="information-btn" type="submit">Send</button>
+                </div>
+            </form>
+            </div>
+
+            CSS:.container-sign-up {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .card-signup {
+            background: var(--clr-accnt-yellow);
+            border-radius: 8px;
+            margin: 2em;
+            }
+
+            .form-signup {
+            display: flex;
+            flex-direction: column;
+            margin: 2em;
+            }
+
+            #submit-form {
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            #submit-form h3 {
+            color: var(--clr-light);
+            }
+
+        </xmp>
+
+    </section>
+
+
 
 </body>
 
