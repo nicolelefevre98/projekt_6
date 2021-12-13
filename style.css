@@ -577,6 +577,13 @@ footer {
     margin: 2em 0;
 }
 
+.links-footer a {
+    color: var(--clr-light);
+    font-size: var(--fs-p);
+    font-family: var(--ff-prim);
+    margin: 2em 0;
+}
+
 /* footer slutter her */
 
 
