@@ -35,20 +35,27 @@ modalConfirm.style.display="flex"
 //opretter menuen hvor punkterne skal laves
 const menu = document.getElementById('menu');
 //loop der har en action for hver element i array
-contactInfo.forEach((field)=> {
+// field er parameter som henter værdie fra hver array element
+contactInfo.forEach((inputValue) => {
+  let li = document.createElement('li');
+  li.classList.add("confirm-written-msg");
+  li.textContent = inputValue;
+
   //henviser til funktionen under der skaber et html element 
-  menu.appendChild(createMenuItem(field));
+  menu.appendChild(li);
 }
 )
 };
 
 
-function createMenuItem(field) {
-  let li = document.createElement('li');
-  li.classList.add("confirm-written-msg");
-  li.textContent = field;
-  return li;
-};
+
+
+// function createMenuItem(inputValue) {
+//   let li = document.createElement('li');
+//   li.classList.add("confirm-written-msg");
+//   li.textContent = inputValue;
+//   return li;
+//};
 //"lukker" modal igennem css style change
 function closeModal() {
   document.getElementById('closeme').style.display = "none";
