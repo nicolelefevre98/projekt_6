@@ -18,7 +18,6 @@ function closeMenu() {
 
 
 //funktion der giver bekræftigelse på beskeden + informationer der er blevet sendt
-
 function confirmMessage(){
 
    const firstName = document.getElementById('fName').value;
@@ -28,14 +27,15 @@ function confirmMessage(){
 
    const modalConfirm = document.getElementById('closeme');
   
-//array der samler værdier fra input fields
+//array der samler værdier fra inputfields
 const contactInfo = [firstName, email, phone, messageInput];
 //ændrer modal fra display none til display flex for at gøre det synligt
 modalConfirm.style.display="flex"
 //opretter menuen hvor punkterne skal laves
 const menu = document.getElementById('menu');
-//loop der har en action for hver element i array
-// field er parameter som henter værdie fra hver array element
+
+// inputValue er parameter som henter værdier fra hvert array element
+//loop der har en action for hver element i array kaldes control flow statement
 contactInfo.forEach((inputValue) => {
   let li = document.createElement('li');
   li.classList.add("confirm-written-msg");
