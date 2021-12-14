@@ -73,7 +73,7 @@ button {
   margin-top: 16px;
 }
 
-#btn_close {
+.btn_close {
   float: right;
   color: var(--clr-dark);
   background-color: var(--clr-light);

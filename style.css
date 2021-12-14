@@ -340,6 +340,9 @@ nav ul li ul li {
     padding: 1em;
     cursor: pointer;
     transition: .15s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .information-btn p {
@@ -601,10 +604,10 @@ footer {
     overflow: hidden;
 }
 
-#top-program-overlay {
+/* #top-program-overlay {
     height: 50em;
     top: -10em;
-}
+} */
 
 
 .content-program-wrap h3,
@@ -655,12 +658,7 @@ footer {
 
 }
 
-#overlay-card {
-    opacity: 60%;
-    top: 0;
-    right: 0;
 
-}
 
 .content-wrap-program {
     display: flex;
