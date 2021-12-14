@@ -18,8 +18,8 @@
     --fs-p: 1rem;
 
 
-    --fw-h1: bold;
-    --fw-h2: bold;
+    --fw-h1: 900;
+    --fw-h2: 540;
     --fw-h3: 500;
 
 
@@ -61,6 +61,7 @@ p {
     color: var(--clr-dark);
     font-size: var(--fs-p);
     font-family: var(--ff-prim);
+    line-height: var(--lh-p);
 }
 
 .test {
@@ -271,10 +272,12 @@ nav ul li ul li {
     margin: 2em 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.black-line-through h3 {
+.black-line-through h2 {
     color: var(--clr-accnt-dyellow);
+    margin: auto;
 }
 
 .slideshow-container {
@@ -343,10 +346,13 @@ nav ul li ul li {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: var(--clr-dark);
+    font-size: var(--fs-p);
+    font-family: var(--ff-prim);
 }
 
-.information-btn p {
-    color: var(--clr-dark);
+.information-btn i {
+    margin-left: 1em;
 }
 
 .information-btn:hover {
@@ -374,19 +380,28 @@ nav ul li ul li {
     }
 }
 
-/* program slider slutter her */
+
 
 .about-ohf {
     display: flex;
     justify-content: space-between;
-    margin: 1em;
     max-width: 100%;
     overflow: hidden;
 
+
+}
+
+
+.content-index-about {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 3;
 }
 
 .wrapper-about-ohf {
     background: var(--clr-accnt-yellow);
+    margin-left: auto;
     margin-right: 1em;
     display: flex;
     flex-direction: column;
@@ -428,11 +443,15 @@ nav ul li ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    margin-top: 3em;
     align-items: center;
     max-width: 70ch;
     margin-left: auto;
     margin-right: auto;
+}
+
+.text-member-top h2 {
+    white-space: nowrap;
 }
 
 .member-sayings-wrap {
@@ -515,6 +534,8 @@ nav ul li ul li {
     margin: 1em;
     width: 40%;
 }
+
+
 
 /* vær medlem forside slutter her */
 
@@ -724,6 +745,11 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 2em;
+}
+
+
+.logo-opc {
+    opacity: 50%;
 }
 
 .yellow-background-board {
