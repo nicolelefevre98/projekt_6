@@ -1,4 +1,4 @@
-// Den åbner og lukker den menu der er i mobil str. 
+// menu i mobil str
 function showMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
 
@@ -13,7 +13,7 @@ function closeMenu() {
 };
 
 
-//Variabler defineres her, ud fra DOM HTML Id
+//Variabler defineres her
 var firstName = document.getElementById("name");
 var mail = document.getElementById("mail");
 var phone = document.getElementById("phone");
@@ -24,7 +24,6 @@ var error = document.getElementById("error");
 
 
 // Arrays er defineret i form af en variabel
-// Det første array indeholder 2 værdier (eksempel)
 var borderColors = ["3px solid red","1px solid grey"];
 var errorMessages = [
     "Udfyld oplysninger",
@@ -38,9 +37,7 @@ var colors = ["red","green"]
 //For at koden ikke bliver læst før der er trykket på knappen tilmeld
 function check(){
 
-// If statement er en condition, som eksikverer et stykke kode, hvis den specifikke condition er true
-// Hvis indholdet i () er sandt eller ej - kører den koden under
-// hvis det er sandt gør den det der står, hvis ikke så går den videre til (else if) feks
+// If statement er en condition, som eksikverer et stykke kode, afhængig af den specifikke condition
     if(firstName.value.length == 0 && mail.value.length == 0 && phone.value.length == 0 && adress.value.length == 0 && zip.value.length == 0){
         //kalder arrayet ved at hente 0 værdi 
         firstName.style.border = borderColors[0];
@@ -90,10 +87,7 @@ function check(){
     }
 }
 
-// forloop kan køre tal flere gange.
 // variabel i er 0 - så længe i er mindre end vores arrays(errorMessages.length) så er loopet i++ hvilket betyder at den altid vil blive plusset med 1
-// derfor loop - da den kører igen.
-// concole log for at kunne se arrays i inspect, hvor den her kalder på arrayet fra innerHTML
 for (var i = 0; i < errorMessages.length; i++) {
     console.log(errorMessages[i])
      }
@@ -101,8 +95,6 @@ for (var i = 0; i < errorMessages.length; i++) {
 //Stopper reload af siden hver gang man tilmelder (submit)
 const form = document.getElementById("form--signup");
 function handleForm(event) {
-    console.log("hej")
+    console.log("stopreload")
      event.preventDefault(); } 
 form.addEventListener('submit', handleForm);
-
-
